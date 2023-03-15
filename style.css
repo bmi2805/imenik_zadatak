@@ -5,7 +5,7 @@
             box-sizing: border-box;
 }
 
-html, body, .container{ min-height: 100% !important;
+html, body, .container-fluid{ min-height: 100% !important;
 height: 100%;}
 
 :root {
@@ -213,7 +213,7 @@ height: 100%;}
 
 
 
- .button-1 {
+ /* .button-1 {
 
      outline: none;
      cursor: pointer;
@@ -245,7 +245,7 @@ height: 100%;}
 
  .button-1:active {
      background-color: #10dfcd;
- }
+ } */
 
 
 
@@ -371,13 +371,13 @@ margin-top: -590px;
 } */
 
 
-.button-forma:hover {
+/* .button-forma:hover {
     background-color: #10dfcd;
 }
 
 .button-forma:active {
     background-color: #10dfcd;
-}
+} */
 
 
 
@@ -521,7 +521,7 @@ body {
     display: flex;
     margin: auto;
 } */
-.container {
+.container-fluid {
     overflow-x: hidden;
     background-color: white !important;
     padding-top: 50px;
@@ -551,14 +551,14 @@ max-width: 100%;
 display: none;     }
 
 
-.button-forma-negativ{
+/* .button-forma-negativ{
     display: flex;
 margin: auto;    }
      .button-forma{
         display: flex;
 margin: auto;    }
     
-   
+    */
 
 .header-row-overlay{
     display: none;
@@ -744,15 +744,15 @@ align-items: center;
 
 }
 
-.button-popis{
+/* .button-popis{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: auto;
-}
+} */
 
 
-.button-popis{
+/* .button-popis{
     outline: none;
      cursor: pointer;
      font: normal normal bold 15px Segoe UI;
@@ -782,7 +782,7 @@ align-items: center;
 
 .button-popis:active {
     background-color: #10dfcd;
-}
+} */
 
 
 
@@ -967,7 +967,7 @@ justify-content: center;
      }
 
 
-     .button-forma-negativ {
+     /* .button-forma-negativ {
         display: flex;
         justify-content: center;
         flex-direction: wrap;
@@ -998,7 +998,7 @@ justify-content: center;
         background-color: #E04B59;
         color: white !important;
 
-    }
+    } */
 
 
     .errMsg{
@@ -1017,7 +1017,7 @@ justify-content: center;
 
  
     
-    #update-btn{
+    /* #update-btn{
         outline: none;
         border: none !important;
         cursor: pointer;
@@ -1062,9 +1062,9 @@ justify-content: center;
     
     .update-btn:active {
         background-color: #e95665;
-    }
+    } */
 
-    #btnSpremi{
+    /* #btnSpremi{
         
         outline: none;
         border: none !important;
@@ -1087,4 +1087,4 @@ justify-content: center;
         
         #btnSpremi:active {
             background-color: #10dfcd;
-        }
+        } */

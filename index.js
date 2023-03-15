@@ -30,7 +30,7 @@ const digitRegex = /^\d+$/;
 var dateRegex = /^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$/;
 
 // -------------------------------------------------- //
-const container = document.querySelector(".container");
+const container = document.querySelector("container-fluid");
 const forma = document.querySelector("#display_2");
 const form = document.querySelector(".forma");
 const btnZapocni = document.querySelector(".button-1");
@@ -179,8 +179,8 @@ static addToImenikList(broj){
                 form.brojMobitela.value=broj.phone;
 
                 document.getElementById("modal-btns").innerHTML =`
-                <button type="submit" id="update-btn"  data-id = ${id}> Update </button>
-                <button type="submit" id="delete-btn"  data-id = ${id}> Delete </button>
+                <button type="submit" id="btn update-btn" class="btn btn-success"  data-id = ${id}> Update </button>
+                <button type="submit" id="btn delete-btn" class="btn btn-danger" data-id = ${id}> Delete </button>
                 
                 `
 
@@ -192,7 +192,7 @@ static addToImenikList(broj){
 
     static prikaziModal() {
         forma.style.display="grid";
-        document.querySelector(".container").style.backgroundColor="rgba(0, 0, 0, 0.162)";
+        document.querySelector(".container-fluid").style.backgroundColor="rgba(0, 0, 0, 0.162)";
         form.reset();
 
 
@@ -200,7 +200,7 @@ static addToImenikList(broj){
 
     static zatvoriModal() {
         forma.style.display= "none";
-        document.querySelector(".container").style.backgroundColor="rgba(0, 0, 0, 0.0)";
+        document.querySelector(".container-fluid").style.backgroundColor="rgba(0, 0, 0, 0.0)";
         form.reset();
 
     }
@@ -223,7 +223,7 @@ function eventListeners() {
         form.reset();
         UI.prikaziModal();
         document.getElementById('modal-btns').innerHTML = `
-        <button type = "submit" id="btnSpremi"> Spremi </button>        
+        <button type = "submit" id="btnSpremi" class="btn btn-success"> Spremi </button>        
         `;
 
         
@@ -470,7 +470,7 @@ function positiveMsg (input){
 
 // const btnDodajBroj= document.querySelector(".button-popis").addEventListener( "click", function() {
 //     document.querySelector("#display_3").style.display="inline-bloc";
-//     document.querySelector(".container").style.backgroundColor="rgba(0, 0, 0, 0.162)";
+//     document.querySelector("container-fluid").style.backgroundColor="rgba(0, 0, 0, 0.162)";
 //  document.querySelector("#display_2").style.display="flex";
 //  document.querySelector("#display_4").style.display="none";
 
@@ -480,7 +480,7 @@ function positiveMsg (input){
 
 // const btnUrediBroj = document.querySelector(".imenik-lista").addEventListener("click", function(){
 //     document.querySelector("#display_3").style.display="grid";
-//     document.querySelector(".container").style.backgroundColor="rgba(0, 0, 0, 0.162)";
+//     document.querySelector("container-fluid").style.backgroundColor="rgba(0, 0, 0, 0.162)";
 //  document.querySelector("#display_2").style.display="none";
 //  document.querySelector("#display_4").style.display="flex";
 // })
