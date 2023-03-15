@@ -6,7 +6,7 @@ const start = document.querySelector(".button-1").addEventListener("click", func
     document.querySelector("#display_3").style.display="block";
     // document.querySelector("#display_4").style.display="none";
 
-    console.log("Ovo je samo test");
+    console.log("Ovo je samo testt");
 
 });
 
