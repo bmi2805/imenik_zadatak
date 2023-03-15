@@ -304,7 +304,7 @@ body {
 
 
 .zaglavlje {
-    height: 80px;
+    height: 100px;
     background: #1DC6B6 0% 0% no-repeat padding-box;
     font: normal normal bold 1rem Segoe UI;
     color: white;
@@ -404,7 +404,7 @@ input#broj-mobitela {
 @media (max-width: 768px) {
 
 
-
+/* 
     .tabela {
         display: inline-block;
 
@@ -472,7 +472,7 @@ input#broj-mobitela {
         background-color: #fff;
         color: rgba(0, 0, 0, 0.6);
     }
-
+ */
 
 
 
@@ -488,11 +488,11 @@ input#broj-mobitela {
 
 
     }
-
+/* 
     .tabela {
         border-spacing: 5px;
     }
-
+ */
 
 
     body {
@@ -572,12 +572,12 @@ margin: auto;    }
         position: fixed;
     }
 
-    .tabela {
+    /* .tabela {
         display: block;
 
         width: 1400px !important;
         overflow-y: hidden !important;
-    }
+    } */
 
     div#display_3 {
         margin: 0;
@@ -787,47 +787,64 @@ margin: auto;    }
 
 
 
+.imenik-ime{
+    padding-left: 10px;
+    
+}
 
+.imenik-email{
+    padding-left: 8px;
 
+}
+.imenik-broj{
+    padding-left: 6px;
+
+}
+
+.imenik-datum{
+    padding-left: 6px;
+
+}
 
 
 
 
 /* address list */
-.imenik-adresa,
-.broj-1 {
-    margin-left: -10px;
-}
+
 
 .imenik-lista {
     margin: 1rem 0;
-    min-height: 450px;
+    min-height: 100px;
     cursor: pointer;
     /* overflow-x: scroll; */
     /* overflow-y: scroll;  */
 
 }
 
-.tabela {
+/* .tabela {
     margin-top: 2rem;
     width: 100%;
     text-align: left;
     border-collapse: collapse;
-    /* width: 1000px; */
 
-}
+} */
 
 
 .tabela {
-    margin-top: 2rem;
+    /* margin-top: 2rem;
     width: 100%;
     text-align: left;
-    border-collapse: collapse;
+    border-collapse: collapse; */
+
+    width: 100%;
+    vertical-align: baseline;
 
 }
 
 .tabela thead {
     border-bottom: 1px solid #e3e4f1;
+  justify-content: baseline;
+  align-items: center;
 
 }
 
@@ -845,20 +862,15 @@ margin: auto;    }
 .tabela tbody td:nth-child(1) {
     padding-left: 0.5rem;
     padding-right: 1rem;
+    font-weight: 800;
+
 }
 
 .tabela tbody td:nth-child(2) {
     font-weight: 800;
 }
 
-.tabela .addressing-name {
-    color: var(--dark-blue);
-}
 
-.tabela .address {
-    font-weight: 600;
-    color: rgba(0, 0, 0, 0.6);
-}
 
 .tabela tbody td:nth-child(3) span {
     background-color: transparent !important;
@@ -905,7 +917,7 @@ margin: auto;    }
 .tabela tbody tr:hover td:nth-child(3) span {
     background-color: #fff;
     color: rgba(0, 0, 0, 0.6);
-}
+} 
 
 
 

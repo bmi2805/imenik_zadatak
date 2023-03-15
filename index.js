@@ -148,19 +148,32 @@ class UI {
 static addToImenikList(broj){
     const tableRow = document.createElement('tr');
     tableRow.setAttribute('data-id', broj.id);
-    tableRow.innerHTML = `    
-    <td><span>${broj.id}</span></td>
-    <td class="imadd>
-        <span class = "imenik-ime">${broj.firstName} ${broj.lastName}</span><br>
-    </td>
-
-    <td class="iadd"><span class = "imenik-adresa">${broj.street}</span><br><span class = "broj-1">${broj.city}  ${broj.postCode}</span>
-    </td>
-    <td> <span>${broj.email}</span></td>
-    <td class="imenik-broj"><span>${broj.phone}</span></td>
-    <td class="datumR"> <span>${broj.dateBirth}</span></td>
+    tableRow.innerHTML = `
+    <th scope="row"><span>${broj.id}</span></th>
+      <td><span class = "imenik-ime">${broj.firstName} ${broj.lastName}</span></td>
+      <td><span class = "imenik-adresa">${broj.street}</span><br><span class = "broj-1">${broj.city}  ${broj.postCode}</span></td>
+      <td><span class="imenik-email">${broj.email}</span></td>
+      <td><span class="imenik-broj">${broj.phone}</span></td>
+      <td><span class="imenik-datum">${broj.dateBirth}</span></td>
 
     `;
+
+
+
+    // <td><span>${broj.id}</span></td>
+    // <td class="imadd>
+    //     <span class = "imenik-ime">${broj.firstName} ${broj.lastName}</span><br>
+    // </td>
+
+    // <td class="iadd"><span class = "imenik-adresa">${broj.street}</span><br><span class = "broj-1">${broj.city}  ${broj.postCode}</span>
+    // </td>
+    // <td> <span>${broj.email}</span></td>
+    // <td class="imenik-broj"><span>${broj.phone}</span></td>
+    // <td class="datumR"> <span>${broj.dateBirth}</span></td>
+
+    
+
+
     addrBookList.appendChild(tableRow);
 
 }
@@ -179,8 +192,8 @@ static addToImenikList(broj){
                 form.brojMobitela.value=broj.phone;
 
                 document.getElementById("modal-btns").innerHTML =`
-                <button type="submit" id="btn update-btn" class="btn btn-success"  data-id = ${id}> Update </button>
-                <button type="submit" id="btn delete-btn" class="btn btn-danger" data-id = ${id}> Delete </button>
+                <button type="submit" id="update-btn" class="btn btn-success"  data-id = ${id}> Update </button>
+                <button type="submit" id="delete-btn" class="btn btn-danger" data-id = ${id}> Delete </button>
                 
                 `
 
