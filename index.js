@@ -219,6 +219,7 @@ static addToImenikList(broj){
     }
 }btnDodajBroj.addEventListener("click", () =>{
     console.log("SAVE")
+    
 })
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -265,6 +266,7 @@ function eventListeners() {
                 const brojItem = new Imenik(lastItemId, firstName, lastName, dateBirth, street, city, postCode, email, phone);
                 Imenik.addKontakt(brojItem);
                 UI.zatvoriModal();
+                $('#myToast3').toast('show');  // << ovdje je dodan red za prikaz .toast-a
 
                 UI.addToImenikList(brojItem);
                 form.reset()
@@ -298,6 +300,8 @@ function eventListeners() {
     modalBtns.addEventListener('click', (event) => {
         if(event.target.id == 'delete-btn'){
             Imenik.deleteKontakt(event.target.dataset.id);
+            $('#myToast1').toast('show');  // << ovdje je dodan red za prikaz .toast-a
+
         }
     });
 
@@ -315,8 +319,12 @@ function eventListeners() {
             } else {
                 const brojItem = new Imenik(id, firstName, lastName, dateBirth, street, city, postCode, email, phone);
                 Imenik.updateKontakt(brojItem);
+                $('#myToast2').toast('show');  // << ovdje je dodan red za prikaz .toast-a
                 UI.zatvoriModal();
-                form.reset(); 
+                form.reset();
+
+                
+
             }
         }
     });
@@ -445,18 +453,19 @@ function positiveMsg (input){
 
 }
 
+ 
+const updateBtn = modalBtns.closest('.update-btn');
+console.log("ne radi");
 
 
+// updateBtn.addEventListener("click", () => {
+// console.log("Update");
 
 
-
-
-
-
-
-
-
-
+//     // $(document).ready(function(){
+//     //     $('.toast').toast('show');
+//     //   });
+// })
 
 
 

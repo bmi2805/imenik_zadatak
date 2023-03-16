@@ -12,6 +12,7 @@ body,
     height: 100%;
 }
 
+
 :root {
 
     /* Colors: */
@@ -76,30 +77,7 @@ body {
 }
 
 
-/* .header-row-1 {
 
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     justify-content: space-evenly;
-     align-content: flex-start;
-     align-items: baseline;
-
- }
-
- .header-row-2 {
-
-
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     justify-content: flex-end;
-     align-content: flex-start;
-     align-items: baseline;
-
-
-
- } */
 
 .header-item {
     margin-left: 10px;
@@ -149,28 +127,12 @@ body {
 }
 
 
-/* .main {
 
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     flex-wrap: wrap;
-
- } */
 
 .content-l {
 
     padding-top: 10%;
 }
-
-/* .content-r {
-
-
-     display: flex;
-     align-items: center;
-     justify-content: center;
-
- } */
 
 
 
@@ -218,42 +180,6 @@ body {
 
 
 
-/* .button-1 {
-
-     outline: none;
-     cursor: pointer;
-     font: normal normal bold 15px Segoe UI;
-
-     line-height: 1;
-     border-radius: 500px;
-     transition-property: background-color, border-color, color, box-shadow, filter;
-     transition-duration: .3s;
-     border: 1px solid transparent;
-     letter-spacing: 2px;
-     min-width: 160px;
-     text-transform: uppercase;
-     white-space: normal;
-     text-align: center;
-     padding: 16px 14px 18px;
-     color: #fff;
-     background-color: #02BFAE;
-
-     height: 53px;
-     width: 180px;
-
-
- }
-
- .button-1:hover {
-     background-color: #10dfcd;
- }
-
- .button-1:active {
-     background-color: #10dfcd;
- } */
-
-
-
 
 
 #display_2 {
@@ -282,26 +208,13 @@ body {
 
 
 
-/* .forma>div {
-     width: calc(50% - 10px);
- }
-
- .forma>div>label {
-     display: flex;
-     margin-bottom: 5px;
- }
-
- .forma>div>input,
- .forma>div>select {
-     width: 100%;
-     margin-bottom: 15px;
-     padding: 5px;
-     border: 1px solid #ccc;
-     border-radius: 3px;
-     box-sizing: border-box;
- } */
 
 
+.toast{
+    position: absolute;
+  
+
+vertical-align: middle;}
 
 .zaglavlje {
     height: 100px;
@@ -333,36 +246,6 @@ padding-left: 24px;
     
 }
 
-/* .button-forma {
-    display: flex;
-    justify-content: center;
-    flex-direction: wrap;
-    max-width: 100px !important;
-    outline: none;
-    border: none !important;
-    cursor: pointer;
-    font: normal normal bold 1rem Segoe UI;
-    border-radius: 7px !important;
-    transition-property: background-color, border-color, color, box-shadow, filter;
-    transition-duration: .3s;
-    letter-spacing: 2px;
-    min-width: 160px;
-    min-height: 40px;
-    padding: 16px 14px 18px;
-    color: #fff;
-    background-color: #02BFAE;
-    border-radius: 10%;
-
-} */
-
-
-/* .button-forma:hover {
-    background-color: #10dfcd;
-}
-
-.button-forma:active {
-    background-color: #10dfcd;
-} */
 
 
 
@@ -404,209 +287,6 @@ input#broj-mobitela {
 @media (max-width: 768px) {
 
 
-/* 
-    .tabela {
-        display: inline-block;
-
-
-    }
-
-    .tabela tr td:nth-child(3) {
-        padding-left: 20px !important;
-
-    }
-
-    .tabela tr td:nth-child(3) {
-        padding-left: 10px !important;
-
-    }
-
-    .tabela tr td:nth-child(6) {
-        padding-left: 20px !important;
-
-    }
-
-
-
-    .tabela tr th:nth-child(3) {
-        padding-left: 20px !important;
-
-    }
-
-    .tabela tr th:nth-child(3) {
-        padding-left: 10px !important;
-
-    }
-
-    .tabela tr th:nth-child(6) {
-        padding-left: 20px !important;
-
-    }
-
-
-    .tabela tr:first-child td:first-child {
-        border-top-left-radius: 20px;
-    }
-
-    .tabela tr:first-child td:last-child {
-        border-top-right-radius: 20px;
-    }
-
-    .tabela tr:last-child td:first-child {
-        border-bottom-left-radius: 20px;
-    }
-
-    .tabela tr:last-child td:last-child {
-        border-bottom-right-radius: 20px;
-    }
-
-
-
-
-    .tabela tbody tr:hover td,
-    .tabela tbody tr:hover span {
-        color: #fff !important;
-    }
-
-    .tabela tbody tr:hover td:nth-child(3) span {
-        background-color: #fff;
-        color: rgba(0, 0, 0, 0.6);
-    }
- */
-
-
-
-
-
-
-
-
-
-
-    button.button-popis {
-        margin-top: 20px;
-
-
-    }
-/* 
-    .tabela {
-        border-spacing: 5px;
-    }
- */
-
-
-    body {
-        overflow: hidden;
-    }
-
-    .imenik-lista {
-        height: calc(100% - 30px);
-        overflow-y: auto;
-        /* height: 300px; */
-
-    }
-
-    .test2 {
-        height: 820px;
-        overflow-y: scroll;
-    }
-
-    .imenik-lista {
-        min-width: 700px;
-    }
-
-    /* div#display_3{
-    display: none;
-} */
-    /* #display_4{
-    display: flex;
-    margin: auto;
-} */
-    .container-fluid {
-        overflow-x: hidden;
-        background-color: white !important;
-        padding-top: 50px;
-        display: block;
-        width: 100%;
-        height: 100vh;
-
-    }
-
-    /* form.forma{
-        display: flex;
-max-width: 100%;
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: 600px;
-     align-items: center;   
-     width: 500px;
-     height: 700px;
-     margin-top:-210px;
-    } */
-
-    /* .header-item {
-        display: none;
-    } */
-
-
-
-
-    /* .button-forma-negativ{
-    display: flex;
-margin: auto;    }
-     .button-forma{
-        display: flex;
-margin: auto;    }
-    
-    */
-
-    /* .header-row-overlay{
-    display: none;
-}; */
-
-
-    div#imenik-lista.imenik-lista {
-        width: 100% !important;
-        overflow-x: scroll;
-        max-height: 700px !important;
-        position: fixed;
-    }
-
-    /* .tabela {
-        display: block;
-
-        width: 1400px !important;
-        overflow-y: hidden !important;
-    } */
-
-    div#display_3 {
-        margin: 0;
-    }
-
-    .test2 {
-        overflow: hidden;
-    }
-
-
-
-
-    /* .header-row-mobile {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:center;
-    align-content: center;
-    align-items: center;
-
-} */
-    /* body {
-    overflow-x: scroll;
-} */
-
-
-
-
-
 }
 
 
@@ -620,20 +300,15 @@ margin: auto;    }
 /* Fullscreen-1 */
 @media screen and (max-width: 600px) {
 
+    .container-fluid {
+        overflow-x: hidden;
+        background-color: white !important;
+        padding-top: 50px;
+        display: block;
+        width: 100%;
+        height: 100vh;
 
-    /* .main-header {
-         padding-top: 7%;
-         display: flex;
-         justify-content: center;
-         flex-wrap: wrap;
-         align-items: center;
-     } */
-
-    /* .header-row-1 {
-         align-items: end;
-     } */
-
-
+    }
     .slogan {
         display: none;
     }
@@ -672,22 +347,7 @@ margin: auto;    }
         padding-top: 10%;
     }
 
-    /* .content-l {
-         font-size: 1rem;
-         align-items: center;
-         vertical-align: middle;
-         text-align: center;
-
-         justify-content: center;
-     } */
-
-    /* .content-r {
-         max-width: 400px;
-         display: flex;
-         justify-content: center;
-         margin: auto;
-     } */
-
+   
 
 
     .button-1 {
@@ -695,7 +355,11 @@ margin: auto;    }
         height: 53px;
     }
 
-
+.main-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
 
 }
@@ -734,57 +398,6 @@ margin: auto;    }
     align-items: center;
 }
 
-/* .header-row-overlay-popis{
-    
-    display: flex;
-	justify-content: baseline;
-	align-items: center;
-    cursor: pointer;
-
-} */
-
-/* .button-popis{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: auto;
-} */
-
-
-/* .button-popis{
-    outline: none;
-     cursor: pointer;
-     font: normal normal bold 15px Segoe UI;
-
-     line-height: 1;
-     border-radius: 500px;
-     transition-property: background-color, border-color, color, box-shadow, filter;
-     transition-duration: .3s;
-     border: 1px solid transparent;
-     letter-spacing: 2px;
-     min-width: 160px;
-     text-transform: uppercase;
-     white-space: normal;
-     text-align: center;
-     padding: 16px 14px 18px;
-     color: #fff;
-     background-color: #02BFAE;
-
-     height: 43px;
-     width: 80px;
-
-}
-
-.button-popis:hover {
-    background-color: #10dfcd;
-}
-
-.button-popis:active {
-    background-color: #10dfcd;
-} */
-
-
-
 
 
 .imenik-ime{
@@ -821,21 +434,11 @@ margin: auto;    }
 
 }
 
-/* .tabela {
-    margin-top: 2rem;
-    width: 100%;
-    text-align: left;
-    border-collapse: collapse;
 
-} */
 
 
 .tabela {
-    /* margin-top: 2rem;
-    width: 100%;
-    text-align: left;
-    border-collapse: collapse; */
-
+   
     width: 100%;
     vertical-align: baseline;
 
@@ -948,42 +551,6 @@ margin: auto;    }
 
 
 
-/* .div1{
-    width: 100%;
-    height: 100%;
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    overflow-y: auto;
-  
-
-}
-
-.div1-1{
-    padding: 20px;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-    width: 100%;
-    height: 100%;
-}
-.div1-2{
-    padding: 20px;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-    width: 100%;
-    height: 100%;
-} */
-
-
-
-
 
 
 
@@ -1001,39 +568,6 @@ margin: auto;    }
 }
 
 
-/* .button-forma-negativ {
-        display: flex;
-        justify-content: center;
-        flex-direction: wrap;
-        max-width: 100px !important;
-        outline: none;
-        border: none !important;
-        cursor: pointer;
-        font: normal normal bold 1rem Segoe UI;
-        border-radius: 7px !important;
-        transition-property: background-color, border-color, color, box-shadow, filter;
-        transition-duration: .3s;
-        letter-spacing: 2px;
-        min-width: 160px;
-        padding: 16px 14px 18px;
-        color: #fff;
-        background-color: #E04B59;
-        border-radius: 10%;
-    
-    }
-    
-    
-    .button-forma-negativ:hover {
-        background-color: #E04B59;
-        color: white !important;
-    }
-    
-    .button-forma-negativ:active {
-        background-color: #E04B59;
-        color: white !important;
-
-    } */
-
 
 .errMsg {
     border: 1px solid #d33c41 !important;
@@ -1043,82 +577,3 @@ margin: auto;    }
     border: 1px solid #02BFAE !important;
 
 }
-
-/* .overflow {
-        overflow-y: scroll; 
-
-    } */
-
-
-
-/* #update-btn{
-        outline: none;
-        border: none !important;
-        cursor: pointer;
-        font: normal normal bold 1rem Segoe UI;
-        border-radius: 7px !important;
-        transition-property: background-color, border-color, color, box-shadow, filter;
-        transition-duration: .3s;
-        letter-spacing: 2px;
-        min-width: 100px;
-        height: 40px;
-        color: #fff;
-        background-color: #02BFAE;
-    }
-
-    #delete-btn{
-        outline: none;
-        border: none !important;
-        cursor: pointer;
-        font: normal normal bold 1rem Segoe UI;
-        border-radius: 7px !important;
-        transition-property: background-color, border-color, color, box-shadow, filter;
-        transition-duration: .3s;
-        letter-spacing: 2px;
-        min-width: 100px;
-        height: 40px;
-        color: #fff;
-        background-color: #E04B59;
-    
-    }
-
-    .update-btn:hover {
-        background-color: #10dfcd;
-    }
-    
-    .update-btn:active {
-        background-color: #10dfcd;
-    }
-
-    .update-btn:hover {
-        background-color: #e95665;
-    }
-    
-    .update-btn:active {
-        background-color: #e95665;
-    } */
-
-/* #btnSpremi{
-        
-        outline: none;
-        border: none !important;
-        cursor: pointer;
-        font: normal normal bold 1rem Segoe UI;
-        border-radius: 7px !important;
-        transition-property: background-color, border-color, color, box-shadow, filter;
-        transition-duration: .3s;
-        letter-spacing: 2px;
-        min-width: 100px;
-        height: 40px;
-        color: #fff;
-        background-color: #02BFAE;
-    }
-
-
-    #btnSpremi:hover {
-            background-color: #10dfcd;
-        }
-        
-        #btnSpremi:active {
-            background-color: #10dfcd;
-        } */
