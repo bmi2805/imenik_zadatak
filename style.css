@@ -207,7 +207,10 @@ body {
 }
 
 
-
+.modal-spremi{
+    position: absolute;
+    vertical-align: middle;
+}
 
 
 .toast {

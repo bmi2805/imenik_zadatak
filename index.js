@@ -130,6 +130,55 @@ class Imenik {
 
 }
 
+
+let modalWrap = null;
+const showModal = () => {
+    if(modalWrap !== null) {
+        modalWrap.remove()
+    }
+
+    modalWrap = document.createElement("div");
+    modalWrap.innerHTML = `
+    <div class = "modalGlobal">
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                               Jeste li sigurni da želite izvršiti ove promjene?
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="modalZatvori">Zatvori</button>
+                                <button type="button" class="btn btn-primary" id="modalSpremi">Spremi</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+    `
+    document.body.append(modalWrap);
+
+    let modal = new bootstrap.Modal(modalWrap.querySelector(".modal"));
+    modal.show();
+}   
+
+function closeModal() {
+    const modal = document.querySelector(".modal");
+
+    modal.style.display = "none";
+
+    const modalBackdrop = document.querySelector(".modal-backdrop");
+    if (modalBackdrop) {
+        modalBackdrop.parentNode.removeChild(modalBackdrop);
+      }
+    
+  
+  }
+
 //UI controller
 
 class UI {
@@ -245,12 +294,22 @@ function eventListeners() {
 
     });
 
+    
     //Add number
     modalBtns.addEventListener("click", (event) => {
         event.preventDefault();
         if (event.target.id === "btnSpremi") {
-
             let isFormValid = getFormData();
+
+            if(isFormValid){
+            showModal();
+
+            const modalSpremi = document.querySelector("#modalSpremi")
+            const modalZatvori = document.querySelector("#modalZatvori");
+
+            
+       
+
             if (!isFormValid) {
                 form.querySelectorAll('input').forEach(input => {
                     setTimeout(() => {
@@ -259,23 +318,36 @@ function eventListeners() {
                 });
             }
             else {
-                let allItem = Imenik.getBrojevi();
-                let lastItemId = (allItem.length > 0) ? allItem[allItem.length - 1].id : 0;
-                lastItemId++;
+                const click1 = modalSpremi.addEventListener("click", () => {
 
-                const brojItem = new Imenik(lastItemId, firstName, lastName, dateBirth, street, city, postCode, email, phone);
-                Imenik.addKontakt(brojItem);
-                UI.zatvoriModal();
-                $('#myToast3').toast('show');  // << ovdje je dodan red za prikaz .toast-a
+                    let allItem = Imenik.getBrojevi();
+                    let lastItemId = (allItem.length > 0) ? allItem[allItem.length - 1].id : 0;
+                    lastItemId++;
 
-                UI.addToImenikList(brojItem);
-                form.reset()
+                    const brojItem = new Imenik(lastItemId, firstName, lastName, dateBirth, street, city, postCode, email, phone);
+                    Imenik.addKontakt(brojItem);
 
-                console.log("RADI");
+                    UI.zatvoriModal();
+
+                    $('#myToast3').toast('show');  // << ovdje je dodan red za prikaz .toast-a
+
+                    UI.addToImenikList(brojItem);
+                    form.reset()
+
+                    console.log("RADI");
+                    closeModal();
+
+
+                })
+
+                const click2 = modalZatvori.addEventListener("click", () =>{
+                    closeModal();
 
 
 
-            }
+                });
+
+            }}
         }
     });
         
@@ -299,9 +371,25 @@ function eventListeners() {
         
     modalBtns.addEventListener('click', (event) => {
         if(event.target.id == 'delete-btn'){
+            showModal();
+            const click1 = modalSpremi.addEventListener("click", () => {
+
+            const modalSpremi = document.querySelector("#modalSpremi")
+            const modalZatvori = document.querySelector("#modalZatvori");
+
+
             Imenik.deleteKontakt(event.target.dataset.id);
             $('#myToast1').toast('show');  // << ovdje je dodan red za prikaz .toast-a
+            closeModal();
 
+        })
+
+        const click2 = modalZatvori.addEventListener("click", () =>{
+
+
+            closeModal();
+
+        });
         }
     });
 
@@ -310,21 +398,46 @@ function eventListeners() {
         if(event.target.id == "update-btn"){
             let id = event.target.dataset.id;
             let isFormValid = getFormData();
+            
+            if(isFormValid){
+                showModal();
+    
+                const modalSpremi = document.querySelector("#modalSpremi")
+                const modalZatvori = document.querySelector("#modalZatvori");
+         
+
             if(!isFormValid){
                 form.querySelectorAll('input').forEach(input => {
                     setTimeout(() => {
                         input.classList.remove('errMsg');
                     }, 1500);
                 });
-            } else {
+
+            
+            }
+            else {
+        
+        
+
+                const click1 = modalSpremi.addEventListener("click", () => {
+
                 const brojItem = new Imenik(id, firstName, lastName, dateBirth, street, city, postCode, email, phone);
                 Imenik.updateKontakt(brojItem);
                 $('#myToast2').toast('show');  // << ovdje je dodan red za prikaz .toast-a
                 UI.zatvoriModal();
                 form.reset();
+                closeModal();
 
+            })
+
+            const click2 = modalZatvori.addEventListener("click", () =>{
+                closeModal();
+
+
+
+            });
                 
-
+        }
             }
         }
     });
@@ -456,6 +569,12 @@ function positiveMsg (input){
  
 const updateBtn = modalBtns.closest('.update-btn');
 console.log("ne radi");
+
+
+
+
+
+
 
 
 // updateBtn.addEventListener("click", () => {
