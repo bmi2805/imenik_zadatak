@@ -210,11 +210,12 @@ body {
 
 
 
-.toast{
+.toast {
     position: absolute;
-  
 
-vertical-align: middle;}
+
+    vertical-align: middle;
+}
 
 .zaglavlje {
     height: 100px;
@@ -229,21 +230,21 @@ vertical-align: middle;}
 
 }
 
-#modal-btns{
-padding-bottom: 30px;
-margin: auto;
-padding-left: 24px;
+#modal-btns {
+    padding-bottom: 30px;
+    margin: auto;
+    padding-left: 24px;
 
 }
 
-.forma > .row {
+.forma>.row {
     padding-top: 4%;
     margin: auto;
 }
 
 .modal-row {
     padding-top: 3%;
-    
+
 }
 
 
@@ -281,13 +282,12 @@ input#broj-mobitela {
 
 }
 
-
-
-
-@media (max-width: 768px) {
-
-
+.forma > div {
+    padding-top: 20px;
 }
+
+
+@media (max-width: 768px) {}
 
 
 
@@ -298,7 +298,7 @@ input#broj-mobitela {
 
 
 /* Fullscreen-1 */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 
     .container-fluid {
         overflow-x: hidden;
@@ -309,6 +309,7 @@ input#broj-mobitela {
         height: 100vh;
 
     }
+
     .slogan {
         display: none;
     }
@@ -347,7 +348,7 @@ input#broj-mobitela {
         padding-top: 10%;
     }
 
-   
+
 
 
     .button-1 {
@@ -355,196 +356,270 @@ input#broj-mobitela {
         height: 53px;
     }
 
-.main-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+    .main-header {
+        margin: auto;
+
+    }
+
+    #slika {
+
+        width: 100%;
+        animation: normal;
+        height: 300px;
+    }
+
+    .test2 {
+        width: 100%;
+        display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+    }
+
+    #display_2 {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* overflow-y: hidden; */
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        margin-top: -210%;
+        width: 100%;
+        padding-bottom: 10%;
+        display: none;
+        
+    }
 
 
-}
-
-
-
-
-
-
-
-
-
-
-
-#display_3 {
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    /* display: grid; */
-    display: none;
-    padding-top: 3%;
-    padding-left: 4%;
-    padding-right: 4%;
-    z-index: -1;
-
-    background-color: transparent !important;
-
-
-
-
-}
-
-.imenik-popis {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-.imenik-ime{
-    padding-left: 10px;
+    .modal-form {
+        height: 100%;
+        padding-right: 30px;
     
-}
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;;}
 
-.imenik-email{
-    padding-left: 8px;
+    .zaglavlje {
+        display: none;
+    }
 
-}
-.imenik-broj{
-    padding-left: 6px;
+    .forma{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+    }
 
-}
+    .forma > div {
+        padding-top: 30px;
+    }
 
-.imenik-datum{
-    padding-left: 6px;
+    .modal-btns{
+        margin:0 ;
+        padding: 0;
 
-}
+        margin-left: 30px;
+    }
 
+    .test2 {
+        width: 100%;
+    }
 
-
-
-/* address list */
-
-
-.imenik-lista {
-    margin: 1rem 0;
-    min-height: 100px;
-    cursor: pointer;
-    /* overflow-x: scroll; */
-    /* overflow-y: scroll;  */
-
-}
-
-
-
-
-.tabela {
-   
-    width: 100%;
-    vertical-align: baseline;
-
-}
-
-.tabela thead {
-    border-bottom: 1px solid #e3e4f1;
-  justify-content: baseline;
-  align-items: center;
-
-}
-
-.tabela thead tr th {
-    padding-bottom: 0.8rem;
-}
-
-
-.tabela tbody td {
-    padding: 1.5rem 0;
-    color: rgba(0, 0, 0, 0.6);
-    font-weight: 600;
-}
-
-.tabela tbody td:nth-child(1) {
-    padding-left: 0.5rem;
-    padding-right: 1rem;
-    font-weight: 800;
-
-}
-
-.tabela tbody td:nth-child(2) {
-    font-weight: 800;
+    
+  
+.imenik-lista{
+width: 350px;
+overflow-x: auto; 
+overflow-y: auto;
 }
 
 
 
-.tabela tbody td:nth-child(3) span {
-    background-color: transparent !important;
-    display: inline-block;
-    padding: 0.3rem 0.6rem;
-    border-radius: 0px;
-}
-
-.tabela tbody tr {
-    cursor: pointer;
-}
-
-.tabela tbody tr:hover {
-    background-color: #F89649;
-    -webkit-transition: all 200ms ease;
-    -o-transition: all 200ms ease;
-    transition: all 200ms ease;
-}
-
-.tabela tr:first-child td:first-child {
-    border-top-left-radius: 20px;
-}
-
-.tabela tr:first-child td:last-child {
-    border-top-right-radius: 20px;
-}
-
-.tabela tr:last-child td:first-child {
-    border-bottom-left-radius: 20px;
-}
-
-.tabela tr:last-child td:last-child {
-    border-bottom-right-radius: 20px;
 }
 
 
 
 
-.tabela tbody tr:hover td,
-.tabela tbody tr:hover span {
-    color: #fff !important;
-}
-
-.tabela tbody tr:hover td:nth-child(3) span {
-    background-color: #fff;
-    color: rgba(0, 0, 0, 0.6);
-} 
 
 
+    #display_3 {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        /* display: grid; */
+        display: none;
+        padding-top: 3%;
+        padding-left: 4%;
+        padding-right: 4%;
+        z-index: -1;
+
+        background-color: transparent !important;
 
 
-.imenik-lista {
-    height: calc(100% - 130px);
-    overflow-y: auto;
-    overflow-x: auto;
-    /* height: 30px; */
-    /* height: 300px; */
-
-}
-
-.test2 {
-    height: 100%;
-}
 
 
-/* 
+    }
+
+    .imenik-popis {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .imenik-ime {
+        padding-left: 10px;
+
+    }
+
+    .imenik-email {
+        padding-left: 8px;
+
+    }
+
+    .imenik-broj {
+        padding-left: 6px;
+
+    }
+
+    .imenik-datum {
+        padding-left: 6px;
+
+    }
+
+
+
+
+    /* address list */
+
+
+    .imenik-lista {
+        margin: 1rem 0;
+        min-height: 100px;
+        cursor: pointer;
+        /* overflow-x: scroll; */
+        /* overflow-y: scroll;  */
+
+    }
+
+
+
+
+    .tabela {
+
+        width: 100%;
+        vertical-align: baseline;
+
+    }
+
+    .tabela thead {
+        border-bottom: 1px solid #e3e4f1;
+        justify-content: baseline;
+        align-items: center;
+
+    }
+
+    .tabela thead tr th {
+        padding-bottom: 0.8rem;
+    }
+
+
+    .tabela tbody td {
+        padding: 1.5rem 0;
+        color: rgba(0, 0, 0, 0.6);
+        font-weight: 600;
+    }
+
+    .tabela tbody td:nth-child(1) {
+        padding-left: 0.5rem;
+        padding-right: 1rem;
+        font-weight: 800;
+
+    }
+
+    .tabela tbody td:nth-child(2) {
+        font-weight: 800;
+    }
+
+
+
+    .tabela tbody td:nth-child(3) span {
+        background-color: transparent !important;
+        display: inline-block;
+        padding: 0.3rem 0.6rem;
+        border-radius: 0px;
+    }
+
+    .tabela tbody tr {
+        cursor: pointer;
+    }
+
+    .tabela tbody tr:hover {
+        background-color: #F89649;
+        -webkit-transition: all 200ms ease;
+        -o-transition: all 200ms ease;
+        transition: all 200ms ease;
+    }
+
+    .tabela tr:first-child td:first-child {
+        border-top-left-radius: 20px;
+    }
+
+    .tabela tr:first-child td:last-child {
+        border-top-right-radius: 20px;
+    }
+
+    .tabela tr:last-child td:first-child {
+        border-bottom-left-radius: 20px;
+    }
+
+    .tabela tr:last-child td:last-child {
+        border-bottom-right-radius: 20px;
+    }
+
+
+
+
+    .tabela tbody tr:hover td,
+    .tabela tbody tr:hover span {
+        color: #fff !important;
+    }
+
+    .tabela tbody tr:hover td:nth-child(3) span {
+        background-color: #fff;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+
+
+
+    .imenik-lista {
+        height: calc(100% - 130px);
+        overflow-y: auto;
+        overflow-x: auto;
+        /* height: 30px; */
+        /* height: 300px; */
+
+    }
+
+    .test2 {
+        height: 100%;
+    }
+
+
+    /* 
 -----------------------------------------------------
 */
-.addressing-name {
-    color: var(--dark-blue);
-}
+    .addressing-name {
+        color: var(--dark-blue);
+    }
 
 
 
@@ -553,27 +628,27 @@ input#broj-mobitela {
 
 
 
+    #display_4 {
+        width: 100vw;
+        height: 100vh;
+        display: none;
+        padding-top: 3%;
+        padding-left: 4%;
+        padding-right: 4%;
+        z-index: 100;
+        justify-content: center;
 
-#display_4 {
-    width: 100vw;
-    height: 100vh;
-    display: none;
-    padding-top: 3%;
-    padding-left: 4%;
-    padding-right: 4%;
-    z-index: 100;
-    justify-content: center;
-
-    background-color: transparent !important;
-}
-
+        background-color: transparent !important;
+    }
 
 
-.errMsg {
-    border: 1px solid #d33c41 !important;
-}
 
-.positiveMsg {
-    border: 1px solid #02BFAE !important;
+    .errMsg {
+        border: 1px solid #d33c41 !important;
+    }
 
-}
+    .positiveMsg {
+        border: 1px solid #02BFAE !important;
+
+    }
+   

@@ -73,9 +73,9 @@ Hej, Vaš kontakt je uspješno spremljen           </div>
 
             <header class="main-header">
                 <div class="header-row-1 row d-flex align-items-baseline">
-                    <div class="header-item-left col-md-1"><img src="./img/imenik.png" alt="Logo" id="logo" class="img-responsive"></div>
-                    <div class="header-item imenik col-md-3">Imenik</div>
-                    <div class="header-item slogan col-lg-7">Vaš online imenik</div>
+                    <div class="header-item-left col-md-1 col-2"><img src="./img/imenik.png" alt="Logo" id="logo" class="img-responsive"></div>
+                    <div class="header-item imenik col-md-3 col-2">Imenik</div>
+                    <div class="header-item slogan col-md-7 col-0">Vaš online imenik</div>
 
                 </div>
 
@@ -97,7 +97,7 @@ Hej, Vaš kontakt je uspješno spremljen           </div>
                             za vjenčanje, zabave ili druge tradicionalne potrebe.</p>
 
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-12">
 
                         <div class="img-1"> <img src="./img/email.svg" alt="Logo" id="slika" class="img-responsive">
                         </div>
@@ -125,8 +125,8 @@ Hej, Vaš kontakt je uspješno spremljen           </div>
             <div class="test2">
                 <div class="imenik-popis">
                     <div class="header-row-overlay-popis row">
-                        <div class="header-item col-sm-2	"><img src="./img/imenik.png" alt="Logo" id="logo1"></div>
-                        <div class="header-item imenik col-sm-6">Imenik</div>
+                        <div class="header-item col-sm-2 col-2	"><img src="./img/imenik.png" alt="Logo" id="logo1"></div>
+                        <div class="header-item imenik col-sm-6 col-2 ">Imenik</div>
                     </div>
                 </div>
 
@@ -182,14 +182,6 @@ Hej, Vaš kontakt je uspješno spremljen           </div>
 
     <div id="display_2">
 
-       
-        
-
-
-
-
-
-
         <div class="modal-form">
 
             <div class="zaglavlje">
@@ -210,7 +202,7 @@ Hej, Vaš kontakt je uspješno spremljen           </div>
             </div>
 
             <form class="forma row">
-                <div class="row">
+                <!-- <div class="row probaj">
                     <div class="col-sm-6">
                         <label for="ime">Ime:</label>
                         <input type="text" id="ime" name="ime" placeholder="Ime"><br>
@@ -257,7 +249,48 @@ Hej, Vaš kontakt je uspješno spremljen           </div>
                 </div>
                 <div class="modal-row" id="modal-btns">
                     <button type="submit" id="btnSpremi" class="btn btn-success">Spremi</button>
+                </div> -->
+                    <div class="col-sm-6">
+                        <label for="ime">Ime:</label>
+                        <input type="text" id="ime" name="ime" placeholder="Ime"><br>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="prezime">Prezime:</label>
+                        <input type="text" id="prezime" name="prezime" placeholder="Prezime"><br>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="datum-rodjenja">Datum rođenja:</label>
+                        <input type="date" id="datum-rodenja" class="datum-rodenja" name="datumRodenja"><br>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="ulica">Ulica i kućni broj:</label>
+                        <input type="text" id="ulica" name="ulica" placeholder="Jukiceva 14"><br>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="mjesto">Mjesto:</label>
+                        <input type="text" id="mjesto" name="mjesto" placeholder="Zagreb"><br>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="postanski-broj">Poštanski broj:</label>
+                        <input type="number" id="postanski-broj" name="postanskiBroj" placeholder="10000"><br>
+                    </div>
+
+
+                    <div class="col-sm-6">
+                        <label for="email">Email adresa:</label>
+                        <input type="email" id="email" name="email" placeholder="ivan@info.com"><br>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="broj-mobitela">Broj mobitela:</label>
+                        <input type="tel" id="broj-mobitela" name="brojMobitela" placeholder="+386911234678"><br>
+                    </div>
+                <div class="col-sm-12" id="modal-btns">
+                    <button type="submit" id="btnSpremi" class="btn btn-success ">Spremi</button>
                 </div>
+
 
             </form>
         </div>
