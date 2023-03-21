@@ -498,7 +498,10 @@ overflow-y: auto;
     }
 
 
-
+.btn-primary{
+    background-color: #1DC6B6;
+    border: none;
+}
 
     /* address list */
 
